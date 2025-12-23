@@ -83,3 +83,12 @@ This project demonstrates:
 - Team collaboration  
 - Clean project structure and version control  
 
+---
+
+## Notes
+- This project was developed and tested locally using WAMP.
+- PHP functionality requires a local server environment to run.
+- The repository focuses on source code and project structure rather than deployment.
+
+
+
