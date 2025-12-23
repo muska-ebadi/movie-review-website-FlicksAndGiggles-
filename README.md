@@ -63,7 +63,8 @@ All members contributed to the design, development, debugging, and documentation
 
 This project demonstrates:
 - Full-stack web development basics
-- Working with databases
+- Database design and integration
+- Working with APIs and JSON data
 - PHP form handling
 - Team collaboration
 - Clean project structure and version control
