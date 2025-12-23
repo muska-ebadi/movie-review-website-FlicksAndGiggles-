@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flicks & Giggles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- IMPORTANT: defer so HTML loads first -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!--
+    /**
+     * @class navigation
+     * @description Main site navigation container with links to key pages.
+     */
+    -->
+    <nav class="navigation">
+        <!--
+        /**
+         * @class navigation-links
+         * @description Unordered list wrapping individual navigation link items.
+         */
+        -->
+        <ul class="navigation-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="BrowseReviews.php">Browse Reviews</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="SubmitReview.html">Submit Review</a></li>
+            <li><a href="About.html">About &amp; Contact</a></li>
+            <li>
+                <!--
+                /**
+                 * @class search-box
+                 * @description Form used for site-wide search; submits query to Movies.html.
+                 * @param {string} action="Movies.html" - target page for search results.
+                 * @param {string} method="get" - HTTP method for form submission.
+                 * @accessibility role="search", aria-label="Site Search"
+                 */
+                -->
+                <form class="search-box" action="Movies.html" method="get" role="search" aria-label="Site Search">
+                    <!--
+                    /**
+                     * @name query
+                     * @type HTMLInputElement
+                     * @description Text field where users enter their search query.
+                     * @placeholder "Search"
+                     * @aria-label "Search query"
+                     */
+                    -->
+                    <input type="text" name="query" placeholder="Search" aria-label="Search query" />
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <!--
+    /**
+     * @class page-content
+     * @description Main content area displaying the movie search and results grid.
+     */
+    -->
+    <main class="page-content">
+        <h1>Find a Movie &amp; Watch the Trailer</h1>
+        <!-- search bar that JS uses -->
+        <!--
+        /**
+         * @id movieSearch
+         * @type HTMLInputElement
+         * @description Input for live movie search; tied to script.js event handlers.
+         * @placeholder "Search for a movie (e.g. Barbie, Inception)..."
+         */
+        -->
+        <input type="text" id="movieSearch" placeholder="Search for a movie (e.g. Barbie, Inception)..." />
+
+        <!-- GRID that JS fills with cards -->
+        <!--
+        /**
+         * @id movieGrid
+         * @class movie-grid
+         * @description Container element where the JavaScript will inject movie card elements.
+         */
+        -->
+        <div id="movieGrid" class="movie-grid"></div>
+    </main>
+
+</body>
+</html>
+

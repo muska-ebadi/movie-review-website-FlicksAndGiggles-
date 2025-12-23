@@ -1,0 +1,96 @@
+<!-- describes the html5 document type -->
+<!DOCTYPE html>
+
+<!-- opens the html document and sets language metadata -->
+<html>
+<head>
+  <!-- declares character encoding as utf-8 -->
+  <meta charset="UTF-8">
+
+  <!-- enables responsive scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- sets the page title -->
+  <title>Flicks & Giggles</title>
+
+  <!-- links the external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- loads external javascript with deferred execution -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- navigation bar containing page links and search form -->
+  <nav class="navigation">
+        <!-- unordered list for navigation links -->
+        <ul class="navigation-links">
+
+            <!-- link to home page -->
+            <li><a href="main.html">Home</a></li>
+
+            <!-- link to browsing reviews page -->
+            <li><a href="BrowseReviews.php" class="active">Browse Reviews</a></li>
+
+            <!-- link to movies list -->
+            <li><a href="Movies.html">Movies</a></li>
+
+            <!-- link to submit review page -->
+            <li><a href="SubmitReview.html">Submit Review</a></li>
+
+            <!-- link to about and contact information -->
+            <li><a href="About.html">About &amp; Contact</a></li>
+
+            <!-- search form container -->
+            <li>
+
+                <!-- search form used to query movies -->
+                <form class="search-box" action="Movies.html" method="get" role="search" aria-label="Site Search">
+
+                    <!-- text input for entering the search query -->
+                    <input type="text" name="query" placeholder="Search" aria-label="Search query" />
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+  <!-- main content wrapper for the page -->
+  <main id="main-content">
+
+    <!-- section showing trending movies -->
+    <section id="trending-section" class="home-section">
+
+      <!-- section title -->
+      <h1>Trending Movies</h1>
+
+      <!-- short description for the trending section -->
+      <p class="section-subtitle">
+        Based on movies with the most and latest reviews.
+      </p>
+
+      <!-- grid container for trending movie cards -->
+      <div id="trending-grid" class="movie-grid"></div>
+    </section>
+
+    <!-- section containing the latest submitted reviews -->
+    <section id="latest-section" class="home-section">
+
+      <!-- section title -->
+      <h1>Latest Reviews</h1>
+
+      <!-- short description of the latest reviews section -->
+      <p class="section-subtitle">
+        See what people have been reviewing recently.
+      </p>
+
+      <!-- list container for dynamically loaded review entries -->
+      <ul id="latest-reviews-list"></ul>
+
+      <!-- button linking to the review submission page -->
+      <a href="SubmitReview.html" class="home-button">Submit a Review</a>
+    </section>
+
+  </main>
+
+</body>
+</html>

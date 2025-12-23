@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Reviews</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="navigation-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="BrowseReviews.html" class="active">Browse Reviews</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="SubmitReview.html">Submit Review</a></li>
+            <li><a href="About.html">About &amp; Contact</a></li>
+            <li>
+                <form class="search-box" action="/search" method="get" role="search" aria-label="Site Search">
+                    <input type="text" name="query" placeholder="Search" aria-label="Search query">
+                    <button type="submit" aria-label="Search">Search</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="browse-reviews">
+        <h1>Browse Reviews</h1>
+        <p>See what other users have said about different movies.</p>
+
+        <div id="reviews-list"></div>
+    </main>
+</body>
+</html>

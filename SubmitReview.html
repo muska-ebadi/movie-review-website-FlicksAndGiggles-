@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="navigation-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="BrowseReviews.php" class="active">Browse Reviews</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="SubmitReview.html">Submit Review</a></li>
+            <li><a href="About.html">About &amp; Contact</a></li>
+            <li>
+                <!--
+                /**
+                 * @form .search-box
+                 * @description Search form for querying movies.
+                 * @param action URL to send search queries.
+                 * @param method GET Search parameters appended to URL.
+                 * @param role search ARIA role for accessibility.
+                 * @param aria-label Descriptive label for assistive technologies.
+                 */
+                -->
+                <form class="search-box" action="Movies.html" method="get" role="search" aria-label="Site Search">
+                    <input type="text" name="query" placeholder="Search" aria-label="Search query" />
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="submit-review">
+        <h1>Submit a Movie Review</h1>
+        <p>Fill out the following form to submit your own review to a movie you have seen.</p>
+
+        <form id="review-form">
+            <div class="form-group">
+                <label for="title">Movie Title:</label>
+                <input type="text" id="title" name="title" class="form-control" list="movie-list" placeholder="Enter movie title..." required>
+                <datalist id="movie-list"></datalist>
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" class="form-control" required>
+                    <option value="">Choose a rating</option>
+                    <option value="5">★★★★★ (5)</option>
+                    <option value="4">★★★★☆ (4)</option>
+                    <option value="3">★★★☆☆ (3)</option>
+                    <option value="2">★★☆☆☆ (2)</option>
+                    <option value="1">★☆☆☆☆ (1)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Your Comments:</label>
+                <textarea id="comments" name="comments" rows="6" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="review-button">Submit Review</button>
+        </form>
+        <p id="submit-message"></p>
+    </main>
+
+</body>
+</html>
+
+<!----> 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flicks & Giggles</title>
+    <!--link to external stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--link to main script file-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!--main navigation bar for site pages-->
+    <nav class="navigation">
+        <ul class="navigation-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="BrowseReviews.php" class="active">Browse Reviews</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="SubmitReview.html">Submit Review</a></li>
+            <li><a href="About.html">About & Contact</a></li>
+            <li>
+                <!--search bar inside nav-->
+                <form class="search-box" action="Movies.html" method="get" role="search" aria-label="Site Search">
+                    <input type="text" name="query" placeholder="Search" aria-label="Search query" />
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <!--main about section-->
+    <div class="about-section">
+
+        <!--page header title-->
+        <h1 id="aboutHeader">About Us</h1>
+
+        <!--intro paragraph on site purpose-->
+        <p>Our mission at Movie Reviews is to capture the evolving spirit of cinema 
+        through the voices of its audience. By enabling anonymous reviews accessible 
+        from anywhere in the world, we empower a global community to share honest 
+        opinions without barriers. Every viewer brings a unique perspective, and 
+        we believe those perspectives deserve a platform that is open, inclusive, 
+        and free from pressure or expectation.</p>
+
+        <!--paragraph on cinema influence-->
+        <p>Cinema continues to shape culture, challenge ideas, and inspire imagination. 
+        Whether a film explores themes of love, tragedy, ambition, or the complexities 
+        of the human condition, each story invites conversation. Our platform aims to 
+        preserve those conversations by creating a space where users can share their 
+        insights with clarity and confidence.</p>
+
+        <!--paragraph on browsing and discovery-->
+        <p>Whether you’re searching for your next great romance, tragedy, or timeless 
+        classic, discovering the perfect film has never been easier. Reviews can be 
+        browsed by genre, popularity, or personal interest, helping you navigate the 
+        vast landscape of cinema with ease. From blockbusters to hidden gems, our 
+        community-driven approach ensures that every film has a voice—and every viewer 
+        has a place.</p>
+
+        <!--closing statement for about page-->
+        <p>Thank you for being part of Movie Reviews. Together, we continue to celebrate 
+        the art of storytelling, one opinion at a time.</p>
+
+        <!--button to open contact modal-->
+        <button id="contactBtn">Contact Us</button>
+
+        <!--overlay for active modal-->
+        <div id="overlay"></div>
+
+        <!--contact modal with info-->
+        <div id="contactModal" class="contactInfo">
+            <h2>Contact Us</h2>
+                <p>Phone: (123) 456-7890</p>
+                <br>
+                <p>Fax: (098) 765-4321</p>
+                <br>
+                <p>Email: movie.reviews@gmail.com</p>
+                <br>
+                <p>Twitter: @movie_Reviews_X</p>
+                <br>
+                <p>Instagram: @movie_Reviews_IG</p>
+                <br>
+                <p>Facebook: @movie_Reviews_FB</p>
+            <br>
+        </div>
+    </div>
+
+</body>
+</html>
